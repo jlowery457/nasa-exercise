@@ -1,9 +1,8 @@
 package com.jefe.nasa.services;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -34,9 +33,11 @@ public class DatesService {
 	
 	@PostConstruct
 	public void initializeDates() {
-		String fileName = "imageDates.txt";
+		String fileName = "/imageDates.txt";
 		
-		try (Stream<String> stream = Files.lines(Paths.get(getClass().getClassLoader().getResource(fileName).toURI()))) {
+		try (InputStream inputStream = getClass().getResourceAsStream(fileName);
+				Stream<String> stream = new BufferedReader(new InputStreamReader(inputStream)).lines()) {
+			
 			String[] possibleFormats = {
 				"MM/dd/yy",
 				"MMM d, yyyy",
@@ -54,7 +55,7 @@ public class DatesService {
 				}
 			});
 			
-		} catch (IOException | URISyntaxException e) {
+		} catch (Exception e) {
 			logger.error("Error reading file {}", fileName, e.getStackTrace());
 		}
 	}

@@ -22,7 +22,7 @@ import com.jefe.nasa.client.NasaRestClient;
 @Component
 public class PhotoService {
 	
-	private static final String IMAGE_CACHE_PATH = "src/main/resources/static/image_cache/";
+	private static final String IMAGE_CACHE_PATH = "/tmp/";
 	
 	private final Logger logger = LoggerFactory.getLogger(PhotoService.class);
 
