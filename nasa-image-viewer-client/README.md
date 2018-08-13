@@ -44,6 +44,10 @@ or
 yarn build
 ```
 
+## Test
+
+Tests are forthcoming and will be done using the Jest Testing framework.
+
 ## Built With
 
 * [Vue.js](https://vuejs.org/) - Web Framework
