@@ -8,8 +8,8 @@ This application can be run either as a stand alone jar file or in a Docker cont
 
 ### Prerequisites
 
-Java SDK 8
-Docker (only if you want to run as Docker container)
+- Java SDK 8
+- Docker (only if you want to run as Docker container)
 
 ### Installing
 
