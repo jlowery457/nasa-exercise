@@ -80,7 +80,7 @@ Spring Boot will start up the server in the Docker container at port **8080**.  
 ## Built With
 
 * [Java 8](https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html) - Language
-* [Spring Boot](https://spring.io/projects/spring-boot) - Servlet Container, Depency Injection, REST Framework, and much more
+* [Spring Boot](https://spring.io/projects/spring-boot) - Servlet Container, Dependency Injection, REST Framework, and much more
 * [Gradle](https://gradle.org/) - Dependency Management and Build Tools
 * [JUnit](https://junit.org/junit4/) - Testing framework
 * [PMD](https://pmd.github.io/) - Static Analysis
