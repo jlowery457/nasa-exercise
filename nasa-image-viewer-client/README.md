@@ -1,6 +1,6 @@
 # nasa-image-viewer-client
 
-A web client written with VueJS as a frontend companion application for **nasa-image-viewer-server**.
+A web client written with Vue.js as a frontend companion application for **nasa-image-viewer-server**.
 
 ## Getting Started
 
@@ -43,3 +43,9 @@ or
 ```bash
 yarn build
 ```
+
+## Built With
+
+* [Vue.js](https://vuejs.org/) - Web Framework
+* [Element](https://element.eleme.io) - Component Library
+* [Axios](https://github.com/axios/axios) - Promised based HTTP library
