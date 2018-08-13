@@ -25,7 +25,7 @@ Information regarding building, testing, and running each project are in the REA
 
 ### nasa-image-viewer-server
 
-This is a Spring Boot application written with Java 8.  It exposes a set of REST APIs that allow a user to retrieve images captured by the Mars rovers Opportunity, Curiousity, and Spirit via the NASA open API for the dates specified above.
+This is a Spring Boot application written with Java 8.  It exposes a set of REST APIs that allow a user to retrieve images captured by the Mars rovers Opportunity, Curiousity, and Spirit via the NASA open API for the dates specified above.  **Please note that April 31, 2018 is an invalid date.  The server logs an error when parsing this date and excludes it from the list.**
 
 When an image is requested, the application will check the cache to see if the image has already been downloaded, if it hasn't, it will request the image from NASA, save it to disk in the /tmp directory, and then serve that image back to the requestor.  Caching of images is done by taking the src_url of the image returned from NASA and using it to generate a sha512 hash as the image file name and saving it to the /tmp directory.
 
