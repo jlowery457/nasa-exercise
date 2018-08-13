@@ -6,6 +6,17 @@ When an image is requested, the application will check the cache to see if the i
 
 This application can be run either as a stand alone jar file or in a Docker container.
 
+## Exposed REST Endpoints
+
+- GET list of dates: `/api/v1/dates`
+  - http://localhost:8080/api/v1/dates
+- GET list of rovers: `/api/v1/rovers`
+  - http://localhost:8080/api/v1/rovers
+- GET list of photos for a given date: `/api/v1/rovers/{name}/photos?{earth_date}`
+  - http://localhost:8080/api/v1/rovers/opportunity/photos?earth_date=2018-06-02
+- GET an individual photo: `/api/v1/rovers/{name}/photos/{id}?{img_src}`
+  - http://localhost:8080/api/v1/rovers/Curiosity/photos/617694?img_src=http%3A%2F%2Fmars.jpl.nasa.gov%2Fmsl-raw-images%2Fmsss%2F01622%2Fmcam%2F1622MR0083260010801245I01_DXXX.jpg
+
 ### Prerequisites
 
 - Java SDK 8
