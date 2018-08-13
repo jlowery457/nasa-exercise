@@ -5,7 +5,7 @@ This project is a coding exercise with the following parameters:
 Using the API described here (https://api.nasa.gov/api.html ) build a project in GitHub that calls the Mars Rover API and selects a picture on a given day. We want your application to download and store each image locally.  
  
 ### Acceptance Criteria
-* Use list of dates below to pull the images were captured on that day by reading in a .txt file
+* Use list of dates below to pull the images that were captured on that day by reading in a .txt file
   * 02/27/17
   * June 2, 2018
   * Jul-13-2016
@@ -42,3 +42,7 @@ This application can be run either as a stand alone jar file or in a Docker cont
 ### nasa-image-viewer-client
 
 This is a Vue.js single page application using Element UI for presentation and Axios for HTTP requests to the backend.
+
+#### Known Limitations and Areas for Improvement
+
+* Since the Web Application was a bonus item and I was getting crunched for time, there are currently no tests for the front end.  This makes me extremely uncomfortable and I will be adding tests in the near future.  I will use [Jest](https://jestjs.io/) as the testing framework.
